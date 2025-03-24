@@ -2934,3 +2934,5 @@ import re
 #     data = f.read()
 #     data += "!"
 #     f.write(data)
+
+print("Данные в локальном репозитории")
