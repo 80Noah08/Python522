@@ -2936,4 +2936,4 @@ import re
 #     f.write(data)
 
 # print("Данные в локальном репозитории")
-print("Hello")
+# print("Hello")
