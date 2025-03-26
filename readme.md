@@ -23,13 +23,4 @@
 * Excepteur
 * sint 
 * occaecat
-  - cupidatat 
-  - non 
-  - proident, 
-    + sunt in 
-    + culpa qui 
-    + officia 
-      + deserunt 
-      + mollit 
-- [x] anim id est 
-- [ ] laborum.”
+  
