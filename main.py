@@ -10,6 +10,7 @@
 # print(id(name))
 # print(id(age))
 # from sys import base_prefix
+import os
 import re
 from sys import set_int_max_str_digits
 
@@ -2624,6 +2625,7 @@ from sys import set_int_max_str_digits
 # Регулярные выражения
 import re
 
+
 #
 # s = "Я ищу совпадения в 2025 году. И я их найду в 2 счёта.6789."
 # reg = r"\."
@@ -3010,17 +3012,214 @@ import re
 #     print(f"{file} ({directory}) - {a_time}")
 # else:
 #     print(f"Фйл {file_path} не существует")
-import os
+# import os
+#
+# dir_name = "Work"
+#
+# objs = os.listdir(dir_name)
+# print(objs)
+#
+# for obj in objs:
+#     p = os.path.join(dir_name, obj)
+#     # print(p)
+#     if os.path.isfile(p):
+#         print(f"{obj} - file - {os.path.getsize(p)} bytes")
+#     if os.path.isdir(p):
+#         print(f"{obj} - dir")
 
-dir_name = "Work"
+# import os
+#
+#
+# def info_files(root, folder):
+#     for root, dirs, files in os.walk(root):
+#         for file in files:
+#             file_path = os.path.join(root, file)
+#             # print(file_path)
+#             file_size = os.path.getsize(file_path)
+#             if file_size == 0:
+#                 os.renames(file_path, os.path.join(folder, file))
+#                 print(f"Файл {file} перемещен из папки {root} в папку {folder}")
+#             else:
+#                 print(f"{file_path} - {file_size} bytes")
+#
+#
+# info_files("Work", "Work/empty_files")
 
-objs = os.listdir(dir_name)
-print(objs)
+# ООП (объектно ориентированное программирование)
 
-for obj in objs:
-    p = os.path.join(dir_name, obj)
-    # print(p)
-    if os.path.isfile(p):
-        print(f"{obj} - file - {os.path.getsize(p)} bytes")
-    if os.path.isdir(p):
-        print(f"{obj} - dir")
+# class Point:
+#     x = 1
+#     y = 2
+
+
+# p1 = Point()
+# # Point.x = 100
+# # print(p1.x)
+# # print(Point.x)
+# # print(id(p1))
+# # print(id(Point))
+# p1.x = 100
+# p1.y = 50
+# print(p1.x, p1.y)
+# print(p1.__dict__)
+#
+# p2 = Point()
+# print(p2.x, p2.y)
+# print(p2.__dict__)
+# print(Point.__dict__)
+
+# class Point:
+#     x = 1
+#     y = 2
+#
+#     def set_coord(self):
+#         print(self.__dict__)
+#
+#
+# p1 = Point()
+# p1.x = 5
+# p1.y = 10
+# p1.set_coord()
+# Point.set_coord(p1)
+#
+# p2 = Point()
+# p2.set_coord()
+
+# class Point:
+#     x = 1
+#     y = 2
+#
+#     def set_coord(self, x1, y1):
+#         self.x = x1
+#         self.y = y1
+#
+#
+# p1 = Point()
+# p1.set_coord(5, 10)
+# Point.set_coord(p1, 10 , 20)
+# print(p1.__dict__)
+#
+# p2 = Point()
+# p2.set_coord(2, 7)
+# print(p2.__dict__)
+
+# class Human:
+#     name = "name"
+#     birthday = "00.00.0000"
+#     phone = "00-00-00"
+#     country = "country"
+#     city = "city"
+#     address = "street, house"
+#
+#     def print_info(self):
+#         print(" Персональные данные ".center(40, "*"))
+#         print(f"Имя: {self.name}\nДата рождения: {self.birthday}\nНомер телефона: {self.phone}\nСтрана: {self.country}"
+#               f"\nГород: {self.city}\nДомашний адрес: {self.address}")
+#         print("=" * 40)
+#
+#     def input_info(self, first_name, birthday, phone, country, city, address):
+#         self.name = first_name
+#         self.birthday = birthday
+#         self.phone = phone
+#         self.country = country
+#         self.city = city
+#         self.address = address
+#
+#     def set_name(self, name):
+#         self.name = name
+#
+#     def get_name(self):
+#         return self.name
+#
+#
+# h1 = Human()
+# h1.print_info()
+# h1.input_info("Юля", "23.05.1986", "45-46-98", "Россия", "Москва","Чистопрудный бульвар 1А")
+# h1.print_info()
+# h1.set_name("Юлия")
+# h1.print_info()
+# print(h1.get_name())
+
+# class Person:
+#     skill = 10
+#
+#     def __init__(self, name, surname):
+#         self.name = name
+#         self.surname = surname
+#
+#     def __del__(self):
+#         print("Удаление экземпляра")
+#
+#     def print_info(self):
+#
+#         print("Данные сотрудника:", self.name, self.surname)
+#
+#     def add_skill(self, k):
+#         self.skill += k
+#         print("Квалификация сотрудника", self.skill, "\n")
+#
+#
+# p1 = Person("Виктор", "Резник")
+# p1.print_info()
+# p1.add_skill(3)
+#
+# p2 = Person("Анна", "Долгих")
+# p2.print_info()
+# p2.add_skill(2)
+
+# class Person:
+#     count = 0
+#
+#     def __init__(self, name, surname):
+#         self.name = name
+#         self.surname = surname
+#         Person.count += 1
+#
+#     def print_info(self):
+#         print("Данные сотрудника:", self.name, self.surname)
+#
+#
+# p1 = Person("Виктор", "Резник")
+# p1.print_info()
+#
+#
+# p2 = Person("Анна", "Долгих")
+# p2.print_info()
+# print(p1.count)
+# print(p2.count)
+# print(Person.count)
+
+class Robot:
+    k = 0
+
+    def __init__(self, name):
+        self.name = name
+        print("Инициализация робота:", self.name)
+        Robot.k += 1
+
+    def __del__(self):
+        print(f"{self.name} выключается")
+        Robot.k -= 1
+
+        if Robot.k == 0:
+            print(f"{self.name} был последним")
+        else:
+            print(f"Работающих роботов осталось: {Robot.k}")
+
+    def say_hi(self):
+        print("Приветствую! Меня зовут:", self.name)
+
+
+droid1 = Robot("R2-D2")
+droid1.say_hi()
+print("Численность роботов:", Robot.k)
+droid2 = Robot("C-3PO")
+droid2.say_hi()
+print("Численность роботов:", Robot.k)
+droid3 = Robot("C-3P2")
+droid3.say_hi()
+print("Численность роботов:", Robot.k)
+print("\nЗдесь роботы могут проделать какую то работу.\n")
+print("Роботы закончили свою работу. Давайте их выключим.\n")
+del droid1, droid2, droid3
+print("Численность роботов:", Robot.k)
