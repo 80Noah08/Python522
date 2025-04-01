@@ -3103,42 +3103,42 @@ import re
 # p2.set_coord(2, 7)
 # print(p2.__dict__)
 
-# class Human:
-#     name = "name"
-#     birthday = "00.00.0000"
-#     phone = "00-00-00"
-#     country = "country"
-#     city = "city"
-#     address = "street, house"
-#
-#     def print_info(self):
-#         print(" Персональные данные ".center(40, "*"))
-#         print(f"Имя: {self.name}\nДата рождения: {self.birthday}\nНомер телефона: {self.phone}\nСтрана: {self.country}"
-#               f"\nГород: {self.city}\nДомашний адрес: {self.address}")
-#         print("=" * 40)
-#
-#     def input_info(self, first_name, birthday, phone, country, city, address):
-#         self.name = first_name
-#         self.birthday = birthday
-#         self.phone = phone
-#         self.country = country
-#         self.city = city
-#         self.address = address
-#
-#     def set_name(self, name):
-#         self.name = name
-#
-#     def get_name(self):
-#         return self.name
-#
-#
-# h1 = Human()
-# h1.print_info()
-# h1.input_info("Юля", "23.05.1986", "45-46-98", "Россия", "Москва","Чистопрудный бульвар 1А")
-# h1.print_info()
-# h1.set_name("Юлия")
-# h1.print_info()
-# print(h1.get_name())
+class Human:
+    name = "name"
+    birthday = "00.00.0000"
+    phone = "00-00-00"
+    country = "country"
+    city = "city"
+    address = "street, house"
+
+    def print_info(self):
+        print(" Персональные данные ".center(40, "*"))
+        print(f"Имя: {self.name}\nДата рождения: {self.birthday}\nНомер телефона: {self.phone}\nСтрана: {self.country}"
+              f"\nГород: {self.city}\nДомашний адрес: {self.address}")
+        print("=" * 40)
+
+    def input_info(self, first_name, birthday, phone, country, city, address):
+        self.name = first_name
+        self.birthday = birthday
+        self.phone = phone
+        self.country = country
+        self.city = city
+        self.address = address
+
+    def set_name(self, name):
+        self.name = name
+
+    def get_name(self):
+        return self.name
+
+
+h1 = Human()
+h1.print_info()
+h1.input_info("Юля", "23.05.1986", "45-46-98", "Россия", "Москва","Чистопрудный бульвар 1А")
+h1.print_info()
+h1.set_name("Юлия")
+h1.print_info()
+print(h1.get_name())
 
 # class Person:
 #     skill = 10
@@ -3189,37 +3189,37 @@ import re
 # print(p2.count)
 # print(Person.count)
 
-class Robot:
-    k = 0
-
-    def __init__(self, name):
-        self.name = name
-        print("Инициализация робота:", self.name)
-        Robot.k += 1
-
-    def __del__(self):
-        print(f"{self.name} выключается")
-        Robot.k -= 1
-
-        if Robot.k == 0:
-            print(f"{self.name} был последним")
-        else:
-            print(f"Работающих роботов осталось: {Robot.k}")
-
-    def say_hi(self):
-        print("Приветствую! Меня зовут:", self.name)
-
-
-droid1 = Robot("R2-D2")
-droid1.say_hi()
-print("Численность роботов:", Robot.k)
-droid2 = Robot("C-3PO")
-droid2.say_hi()
-print("Численность роботов:", Robot.k)
-droid3 = Robot("C-3P2")
-droid3.say_hi()
-print("Численность роботов:", Robot.k)
-print("\nЗдесь роботы могут проделать какую то работу.\n")
-print("Роботы закончили свою работу. Давайте их выключим.\n")
-del droid1, droid2, droid3
-print("Численность роботов:", Robot.k)
+# class Robot:
+#     k = 0
+#
+#     def __init__(self, name):
+#         self.name = name
+#         print("Инициализация робота:", self.name)
+#         Robot.k += 1
+#
+#     def __del__(self):
+#         print(f"{self.name} выключается")
+#         Robot.k -= 1
+#
+#         if Robot.k == 0:
+#             print(f"{self.name} был последним")
+#         else:
+#             print(f"Работающих роботов осталось: {Robot.k}")
+#
+#     def say_hi(self):
+#         print("Приветствую! Меня зовут:", self.name)
+#
+#
+# droid1 = Robot("R2-D2")
+# droid1.say_hi()
+# print("Численность роботов:", Robot.k)
+# droid2 = Robot("C-3PO")
+# droid2.say_hi()
+# print("Численность роботов:", Robot.k)
+# droid3 = Robot("C-3P2")
+# droid3.say_hi()
+# print("Численность роботов:", Robot.k)
+# print("\nЗдесь роботы могут проделать какую то работу.\n")
+# print("Роботы закончили свою работу. Давайте их выключим.\n")
+# del droid1, droid2, droid3
+# print("Численность роботов:", Robot.k)
