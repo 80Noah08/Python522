@@ -1,0 +1,52 @@
+.roman {
+    list-style-type: upper-roman;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+ul>li {
+    list-style-type: lower-latin;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: black;
+}
+
+.O_mark {
+    list-style-image: url(orange_marker.png);
+}
+
+.G_mark {
+    list-style-image: url(green_marker.png);
+}
+
+.R_mark {
+    list-style-image: url(red_marker.png);
+}
+
+.B_mark {
+    list-style-image: url(blue_marker.png);
+}
+
+.Bl_mark {
+    list-style-image: url(black_marker.png);
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellowgreen;
+}
+
+.green {
+    color: green;
+}
+
+.viola {
+    color: violet;
+}
+
+.blue {
+    color: blue;
+}
