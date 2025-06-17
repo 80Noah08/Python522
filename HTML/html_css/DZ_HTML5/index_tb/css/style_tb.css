@@ -1,0 +1,27 @@
+body {
+    background-image: url(../img/pattern.png);
+}
+table{
+    border: 2px solid silver;
+    width: 800px;
+    height: 285px;
+    border-collapse: collapse;
+    background: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 80px 50px;
+    box-shadow: 0 0 2px 2px silver;
+}
+th{
+    background-image: url(../img/tablebg.jpg);
+    border: 2px solid silver;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+td{
+    border: 2px solid silver;
+}
+.row{
+    background: silver;
+}
