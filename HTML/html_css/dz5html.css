@@ -1,0 +1,79 @@
+form {
+    font-family: sans-serif;
+}
+
+#sev {
+    margin-left: 20px;
+}
+
+.lang {
+    float: right;
+}
+
+select#one {
+    width: 120px;
+}
+
+textarea {
+    width: 600px;
+    height: 80px;
+}
+
+.ver {
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+td {
+    min-width: 200px;
+    max-width: 600px;
+    padding: 5px;
+    float: inline-start;
+
+}
+
+.silver {
+    font-size: 12px;
+    color: darkcyan;
+}
+
+.small {
+    font-size: 12px;
+}
+
+h4 {
+    color: blueviolet;
+}
+
+button {
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 200px;
+}
+
+#two {
+    width: 300px;
+}
+
+select#tree {
+    width: 280px;
+}
+
+select#four {
+    width: 600px;
+}
+
+input[type="text"]#five {
+    width: 150px;
+}
+
+button#six {
+    width: 550px;
+    margin-left: 30px;
+
+}
