@@ -17,6 +17,7 @@ body {
 
 .top__block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -70,10 +71,12 @@ body {
     text-align: center;
     margin: 40px 0;
 }
+
 .top__countainer {
     padding: 80px 0 80px 0;
     margin: 0;
 }
+
 .top__inner-countainer {
     padding: 40px 0 40px 0;
     margin: 0;
@@ -83,6 +86,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 40px 0 40px 0;
+
 
 }
 
@@ -97,8 +101,9 @@ body {
     text-align: center;
     border-radius: 37px;
     background: rgb(255, 166, 43);
-    margin: 0 10px;
+    margin: 0 5px;
     border: none;
+    cursor: pointer;
 }
 
 .top__button--right {
@@ -113,5 +118,457 @@ body {
     box-sizing: border-box;
     border: 1px solid rgb(0, 160, 193);
     border-radius: 37px;
-    margin: 0 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Choose */
+.choose {
+    padding: 145px 0 100px;
+}
+
+.choose h2 {
+    color: rgb(37, 43, 66);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.choose__title--text {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin: 0 0 45px;
+}
+
+.choose__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.choose__element {
+    flex-basis: 328px;
+    box-sizing: border-box;
+    border: 1px solid rgb(232, 232, 232);
+    background: rgb(255, 255, 255);
+    padding: 35px 40px;
+    margin-bottom: 30px;
+}
+
+.choose__title {
+    display: flex;
+    align-items: center;
+
+}
+
+.choose__title h5 {
+    color: rgb(37, 43, 66);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0 0 0 15px
+}
+
+.choose__title p {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin: 0;
+}
+
+/* clients */
+.clients {
+    background: rgb(243, 243, 243);
+    padding: 80px 0;
+}
+
+.clients h2 {
+    color: rgb(37, 43, 66);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin: 0;
+}
+
+.clients p {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.clients__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clients__element {
+    width: 327px;
+    height: 244px;
+    box-sizing: border-box;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    padding: 30px 35px;
+}
+.clients__img {
+    margin-right: 15px;
+}
+.clients__block--in {
+    display: flex;
+}
+.clients__element h6 {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 20px 0;
+}
+
+.clients__name a span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+.clients__element a {
+    color: rgb(255, 166, 43);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+.clients__name span {
+    color: rgb(37, 43, 66);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0;
+    text-align: center;
+
+}
+
+/* team */
+.team {
+    border-top: 1px solid gray;
+    /*удалить потом*/
+    padding: 80px 0 50px;
+}
+
+.team h2 {
+    color: rgb(37, 43, 66);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.team p {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    margin: 0 0 80px
+}
+
+.team__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team__element {
+    box-sizing: border-box;
+    border: 1px solid rgb(238, 238, 238);
+    background: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team__element h5 {
+    color: rgb(37, 43, 66);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 30px 0 5px;
+}
+
+.team__element h6 {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 5px;
+}
+
+.team__element div img {
+    margin: 0 7.5px 30px;
+}
+
+.team__element>img {
+    width: 100%;
+}
+
+/* contact */
+.contact {
+    padding: 90px 0;
+    background: url(images/b_5_fon.jpg) center #EFEFEF;
+    background-size: cover;
+
+}
+
+.contact h5 {
+    color: rgb(37, 43, 66);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+
+.contact h2 {
+    color: rgb(37, 43, 66);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    margin: 0 0 40px;
+}
+
+form {
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    flex-basis: 290px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+textarea {
+    flex-basis: 602px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    background: rgb(249, 249, 249);
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    height: 140px;
+    margin-bottom: 40px;
+}
+
+input {
+    box-sizing: border-box;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    background: rgb(249, 249, 249);
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    padding: 12px 20px;
+}
+
+select {
+    box-sizing: border-box;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    background: rgb(249, 249, 249);
+    color: rgb(189, 189, 189);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    padding: 12px 20px;
+}
+
+form>button {
+    border-radius: 5px;
+    background: rgb(255, 166, 43);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    border: none;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+.end {
+    background: rgb(243, 243, 243);
+}
+.end__block--out {
+    display: flex;
+    justify-content: space-between;
+}
+.end__block {
+    padding: 40px 0;
+}
+
+.end__block h3 {
+    color: rgb(37, 43, 66);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+
+.end__block p {
+    color: rgb(115, 115, 115);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin: 10px 0 0;
+}
+.end__block--button {
+    display: flex;
+    justify-content: flex-end;
+}
+.end__block--button  button{
+    border-radius: 5px;
+    background: rgb(255, 166, 43);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    width: 143px;
+    height: 58px;
+    border: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+/* foot */
+.foot {
+    background: rgb(37, 43, 66);
+    padding: 40px 0;
+}
+
+.foot__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot__block--left {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.foot__block--right {
+    margin: 0;
+    display: flex;
+    list-style: none;
+}
+
+.top__block--right li {
+    margin-left: 20px
+}
+
+.one,
+.two,
+.three,
+.four {
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 1050px) {
+    .wrap {
+        padding: 0 40px;
+        box-sizing: border-box;
+    }
+
+    .choose__block,
+    .team__block,
+    .clients__block {
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 760px) {
+
+    .choose__element,
+    .team__element {
+        flex-basis: 100%;
+    }
+
+    .top h1 {
+        font-size: 54px;
+    }
+
+    br {
+        display: none;
+    }
+}
+
+@media(max-width: 714px) {
+
+    input,
+    select {
+        flex-basis: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media(max-width: 454px) {
+
+    .top__button--left,
+    .top__button--right {
+        display: block;
+        margin: 25px 40px
+    }
+
+    .top h1 {
+        font-size: 40px;
+        line-height: 57px;
+    }
 }
