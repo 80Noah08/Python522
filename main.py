@@ -14,10 +14,10 @@
 # import re
 # from sys import set_int_max_str_digits
 # from sys import prefix
-import json
-import string
-
-from car.electro_car import ElectroCar
+# import json
+# import string
+#
+# from car.electro_car import ElectroCar
 
 # a = b = c = 1
 # a, b, c = 5, "Hello", 7.2
@@ -5525,7 +5525,7 @@ from car.electro_car import ElectroCar
 #     for d in data:
 #         writer.writerow(d)
 
-import sqlite3
+# import sqlite3
 
 # con = sqlite3.connect("profile.db")
 # cur = con.cursor()
@@ -5548,39 +5548,39 @@ import sqlite3
 #
 # with sqlite3.connect("users.db") as con:
 #     cur = con.cursor()
-    # cur.execute("""
-    # CREATE TABLE IF NOT EXISTS person(
-    # id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #  name TEXT NOT NULL,
-    #  phone BLOB NOT NULL DEFAULT "+79097654321",
-    #  age INTEGER CHECK(age > 0 AND age < 100),
-    #  email TEXT UNIQUE
-    #  )
-    #  """)
-    # cur.execute("""
-    # ALTER TABLE person
-    # RENAME TO person_table;
-    # """)
-    #
-    # cur.execute("""
-    #     ALTER TABLE person_table
-    #     ADD COLUMN address TEXT
-    #     """)
+# cur.execute("""
+# CREATE TABLE IF NOT EXISTS person(
+# id INTEGER PRIMARY KEY AUTOINCREMENT,
+#  name TEXT NOT NULL,
+#  phone BLOB NOT NULL DEFAULT "+79097654321",
+#  age INTEGER CHECK(age > 0 AND age < 100),
+#  email TEXT UNIQUE
+#  )
+#  """)
+# cur.execute("""
+# ALTER TABLE person
+# RENAME TO person_table;
+# """)
+#
+# cur.execute("""
+#     ALTER TABLE person_table
+#     ADD COLUMN address TEXT
+#     """)
 
-    # cur.execute("""
-    #         ALTER TABLE person_table
-    #         RENAME COLUMN address TO home_address
-    #         """)
+# cur.execute("""
+#         ALTER TABLE person_table
+#         RENAME COLUMN address TO home_address
+#         """)
 
-    # cur.execute("""
-    #             ALTER TABLE person_table
-    #             DROP COLUMN home_address
-    #             """)
+# cur.execute("""
+#             ALTER TABLE person_table
+#             DROP COLUMN home_address
+#             """)
 
-    # cur.execute("""
-    #                 DROP TABLE person_table
-    #
-    #                 """)
+# cur.execute("""
+#                 DROP TABLE person_table
+#
+#                 """)
 
 # with sqlite3.connect("db_3.db") as con:
 #     cur = con.cursor()
@@ -5588,16 +5588,137 @@ import sqlite3
 #     SELECT *
 #     FROM T1
 #     LIMIT 2, 5
-    """
-                )
+#     """
+#                 )
+#
+# # for res in cur:
+# #     print(res)
+# # res = cur.fetchall()
+# # print(res)
+# # res2 = cur.fetchmany(2)
+# # print(res2)
+# #
+# # res1 = cur.fetchone()
+# # print(res1)
+#
+# from bs4 import BeautifulSoup
 
-# for res in cur:
+# f = open('index.html').read()
+# soup = BeautifulSoup(f, "html.parser")
+# row = soup.find("div", class_="row")
+# row = soup.find_all("div", class_="row")[2].find("div", class_="name").text
+# row = soup.find_all("div", class_="row")[2].find("div", {"data-set": "salary"})
+# row = soup.find_all("div", class_="row")[2].find("div", {"class": "name"})
+# row = soup.find("div", string="Alena").parent
+# row = soup.find("div", string="Alena").find_parent(class_="row")
+# row = soup.find("div", id="whois3").find_next_sibling()
+# print(row)
+
+
+# def get_copywriter(tag):
+#     whois = tag.find("div", class_="whois").text
+#     if "Copywriter" in whois:
+#         return tag
+#     return None
+#
+#
+# f = open('index.html').read()
+# soup = BeautifulSoup(f, "html.parser")
+#
+# copywriter = []
+# row = soup.find_all("div", class_="row")
+# for i in row:
+#     cw = get_copywriter(i)
+#     if cw:
+#         copywriter.append(cw)
+#
+# print(copywriter)
+# import re
+#
+#
+# def get_salary(s):
+#     pattern = r"\d+"
+#     # res = re.findall(pattern, s)[0]
+#     res = re.search(pattern, s).group()
 #     print(res)
-# res = cur.fetchall()
-# print(res)
-# res2 = cur.fetchmany(2)
-# print(res2)
-# 
-# res1 = cur.fetchone()
-# print(res1)
+#
+#
+# f = open('index.html').read()
+# soup = BeautifulSoup(f, "html.parser")
+# salary = soup.find_all("div", {"data-set": "salary"})
+# for i in salary:
+#     get_salary(i.text)
 
+# from bs4 import BeautifulSoup
+# import requests
+
+
+# r = requests.get("https://ru.wordpress.org/")
+# print(r.headers['content-type'])
+# print(r.content)
+# print(r.text)
+# from bs4 import BeautifulSoup
+# import requests
+#
+#
+# def get_html(url):
+#     r = requests.get(url)
+#     return r.text
+#
+#
+# def get_data(html):
+#     soup = BeautifulSoup(html, "lxml")
+#     p1 = soup.find("h1", class_="wp-block-heading").text
+#     return p1
+#
+#
+# def main():
+#     url = "https://ru.wordpress.org/"
+#     print(get_data(get_html(url)))
+#
+#
+# if __name__ == "__main__":
+#     main()
+
+from bs4 import BeautifulSoup
+import requests
+import re
+import csv
+
+
+def get_html(url):
+    r = requests.get(url)
+    return r.text
+
+
+def refind(s):
+    return re.sub(r"\D+", "", s)
+
+
+def write_csv(data):
+    with open('plagins.csv', "a") as f:
+        writer = csv.writer(f, delimiter=";", lineterminator="\r")
+        writer.writerow([data["name"], data["url"], data["rating"], data["snippet"]])
+
+
+def get_data(html):
+    soup = BeautifulSoup(html, "lxml")
+    p1 = soup.find_all("section", class_="plugin-section")[2]
+    plugins = p1.find_all("li")
+    for plugin in plugins:
+        name = plugin.find("h3", class_="entry-title").text
+        url = plugin.find("h3", class_="entry-title").find("a").get("href")
+        rating = plugin.find("span", class_="rating-count").text
+        replace_rating = refind(rating)
+        snippet = plugin.find("div", class_="entry-excerpt").text.strip()
+        data = {"name": name, "url": url, "rating": replace_rating, "snippet": snippet}
+        write_csv(data)
+
+
+def main():
+    url = "https://ru.wordpress.org/plugins/"
+    get_data(get_html(url))
+
+
+if __name__ == "__main__":
+    main()
